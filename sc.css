@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body { 
+    font-family: "Comic Relief", system-ui;
+    margin:0; 
+    background:#ffffff; 
+    color:#222 
+}
+
+/* Header */
+header {
+  padding: 40px;
+  text-align: center;
+  background: white;
+  color: #333;
+}
+
+/* Top navigation bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #23c981;
+}
+
+/* Navigation bar links */
+.navbar a {
+  color: white;
+  padding: 18px 40px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem; 
+}
+
+/* Change color on hover */
+.navbar a:hover {   
+  background-color: #5fcb9c;
+  color: black;
+}
+
+/* Column container */
+.container {  
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  padding: 20px;
+}
+
+h1 { 
+    padding: inherit;
+    margin: auto;
+    text-align: center;
+    font-size: 2.5rem; 
+    margin:0 0 .5rem; 
+    font-family: "Comic Relief", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 { 
+    padding: inherit;
+    margin: auto;
+    text-align: center;
+    font-size: 1.875rem; 
+    font-family: "Comic Relief", system-ui;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h3 { 
+    padding: inherit;
+    margin: auto;
+    text-align: center;
+    font-size: 1.25rem; 
+    font-family: "Comic Relief", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+p { 
+    font-size: 1rem; 
+    margin:0; 
+    color:black; 
+    font-family: "Comic Relief", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* this week image, just for this example */
+.weekimg {
+  padding: inherit;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+}
+
+.weekimg img {
+    width: 90%;
+    height: auto;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #d5f5e8;
+}
+
+
+ /* Styles for screens wider than 768px */
+    @media (min-width: 768px) {
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+    }
+
+/* Styles for screens narrower than 480px */
+    @media (max-width: 480px) {
+        .container {
+            padding: 10px;
+        }
+        .navbar {   
+            flex-direction: column;
+        }
+    }
